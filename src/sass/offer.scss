@@ -1,0 +1,22 @@
+.offer {
+    padding-top: 5rem;
+}
+.nav-bars {
+   color: black;
+}
+
+@media (min-width:576px) {
+   
+}
+@media (min-width:768px) {
+  
+    .offer {
+        padding-top: 15rem;
+    }
+    .nav-bars {
+        display: none;
+     }
+}
+@media (min-width:992px) {
+  
+}

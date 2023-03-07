@@ -1,0 +1,357 @@
+.nav-bars {
+    color: black;
+}
+
+.contact {
+    padding: 4em 3em;
+
+    h1 {
+        font-size: 3.4rem;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    form {
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2em;
+        }
+
+        .form-boxes {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .send-btn {
+                height: 40px;
+                width: 100px;
+                font-size: 1.5rem;
+                border-radius: 8px;
+                background-color: rgb(21, 213, 21);
+                color: black;
+                border: none;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                transition:  background-color .3s, color .3s;
+            }
+
+            .send-btn:hover {
+           
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+
+
+            .form-box {
+                width: 90%;
+                position: relative;
+                margin-bottom: 5em;
+
+                .form_input {
+                    padding: .7em 1em;
+                    font-size: 1.7rem;
+                    width: 100%;
+                    border: 2px solid black;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    outline: none;
+                    transition: border .2s;
+                }
+
+                .form_input:focus {
+                    border: 2px solid rgb(40, 165, 40);
+                }
+
+                .form_label {
+                    position: absolute;
+                    font-size: 1.5rem;
+                    left: 20px;
+                    padding: 0 .5em;
+                    text-transform: uppercase;
+                    top: -10px;
+                    background-color: #fff;
+                }
+
+                .form_label-addon {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 15px;
+
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+
+
+
+            }
+
+            .area {
+                width: 90%;
+                position: relative;
+                margin-bottom: 3em;
+
+                textarea {
+                    width: 100%;
+                    height: 200px;
+                    resize: none;
+                    border: 2px solid black;
+                    border-radius: 8px;
+                    padding: 1.2em;
+                    outline: none;
+                    font-size: 1.5rem;
+
+                }
+
+                textarea:focus {
+                    border: 2px solid rgb(30, 167, 30);
+                }
+
+
+                .area_label {
+                    position: absolute;
+                    font-size: 1.5rem;
+                    left: 20px;
+                    padding: 0 .5em;
+                    text-transform: uppercase;
+                    top: -10px;
+                    background-color: #fff;
+
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+@media (min-width: 576px) {
+    .contact {
+        padding: 4em 3em;
+
+        h1 {
+            font-size: 3.7rem;
+        }
+
+        form {
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            .form-boxes {
+                width: 100%;
+
+                .send-btn {
+                    height: 40px;
+                    width: 100px;
+                    font-size: 1.7rem;
+                    padding: 0.3em;
+                }
+
+
+                .form-box {
+                    width: 70%;
+
+
+
+
+
+
+
+                }
+
+                .area {
+                    width: 70%;
+
+                    textarea {
+                        width: 100%;
+                        height: 200px;
+                        font-size: 1.5rem;
+
+                    }
+
+                    .area_label {
+                        font-size: 1.5rem;
+
+
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
+@media (min-width: 768px) {
+    .nav-bars {
+        display: none;
+    }
+    .contact {
+        padding: 15em 3em 7em 3em;
+
+        h1 {
+            font-size: 3.7rem;
+        }
+
+        form {
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            .form-boxes {
+                width: 100%;
+
+                .send-btn {
+                    height: 40px;
+                    width: 100px;
+                    font-size: 1.7rem;
+                    padding: 0.3em;
+                }
+                .form_input {
+                    font-size: 1.8rem;
+                }
+
+                .form-box {
+                    width: 50%;
+
+
+
+
+
+
+
+                }
+
+                .area {
+                    width: 50%;
+
+                    textarea {
+                        width: 100%;
+                        height: 200px;
+                        font-size: 1.7rem;
+
+                    }
+
+                    .area_label {
+                        font-size: 1.5rem;
+
+
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
+@media (min-width: 1200px) {
+    .nav-bars {
+        display: none;
+    }
+    .contact {
+        padding: 15em 5em 7em 5em;
+
+        h1 {
+            font-size: 3.7rem;
+        }
+
+        iframe{
+            width: 50%;
+            height: 700px;
+        }
+
+        .wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        form {
+    
+
+
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            .form-boxes {
+                width: 90%;
+
+                .send-btn {
+                    height: 40px;
+                    width: 100px;
+                    font-size: 1.7rem;
+                    padding: 0.3em;
+                }
+                .form_input {
+                    font-size: 1.8rem;
+                }
+
+                .form-box {
+                    width: 100%;
+
+
+
+
+
+
+
+                }
+
+                .area {
+                    width: 100%;
+
+                    textarea {
+                        width: 100%;
+                        height: 250px;
+                        font-size: 1.7rem;
+
+                    }
+
+                    .area_label {
+                        font-size: 1.5rem;
+
+
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
